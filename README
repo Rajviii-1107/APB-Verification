@@ -1,0 +1,65 @@
+Verification IP for AMBA 3 APB Protocol v1.0
+Specification is available at https://web.eecs.umich.edu/~prabal/teaching/eecs373-f12/readings/ARM_AMBA3_APB.pdf
+
+VIP Database Structure: 
+
+|
+|
+|__ env                 //Env, Env CFG.
+|   |
+|   |___
+|   |
+|   |___
+|
+|__ hdl_interconnect    //B2B Wrapper Files
+|
+|
+|__ includes            //Defines Files
+|   |
+|   |___
+|   |
+|   |___
+|
+|__ master_agent        //Agent, Agent CFG, Driver, Monitor, Sequencer, Sequence, M TXN.
+|   |
+|   |___
+|   |
+|   |___
+|
+|
+|__ sim                 //MakeFile, waves.tcl, Place to run simulation.
+|   |
+|   |___
+|   |
+|   |___
+|
+|
+|__ slave_agent         //Agent, Agent CFG, Driver, Monitor, Sequencer, Sequence, TXN.
+|   |
+|   |___
+|   |
+|   |___
+|
+|
+|__ src                //Base Txn Class
+|
+|
+|__ tb                 //TB_TOP, PKG File, Base IF, M IF, S IF, M Assertion, S Assertion.
+|
+|
+|__ test               //Base Test, Other Tests, Test Top.
+
+
+Simulation:
+//Simulation steps and commands go here.
+
+
+Results:
+// Info on Simulation log, coverage report.
+
+Verification using VIP:
+//Steps to connect a master or a slave design.
+//Steps to extend, create & run:
+        * Custom Sequences
+        * Custom Tests
+        * Custom Covergroups
