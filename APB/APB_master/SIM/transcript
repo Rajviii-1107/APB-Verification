@@ -1,0 +1,425 @@
+# //  Questa Sim-64
+# //  Version 10.4e win64 Apr  9 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# vsim -novopt apb_tb_top -do "run -all; exit" 
+# Start time: 11:37:49 on Jul 26,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Refreshing E:/Training/UVM/APB/APB_master/SIM/work.apb_tb_top
+# Refreshing E:/Training/UVM/APB/APB_master/SIM/work.apb_test_pkg
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.apb_test_pkg
+# Refreshing E:/Training/UVM/APB/APB_master/SIM/work.apb_tb_top_sv_unit
+# Loading work.apb_tb_top_sv_unit
+# Loading work.apb_tb_top
+# Refreshing E:/Training/UVM/APB/APB_master/SIM/work.apb_inf
+# Loading work.apb_inf
+# Loading mtiUvm.questa_uvm_pkg
+# ** Warning: (vsim-8441) ../ENV/SLAVE_ENV/apb_slave_monitor.sv(61): Clocking block output vif.slv_mon_cb.pready is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_test_pkg File: ../TEST/apb_test_pkg.sv
+# Loading C:/questasim64_10.4e/uvm-1.1d\win64\uvm_dpi.dll
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_base_test...
+# UVM_INFO ..\ENV\MASTER_ENV/apb_env.sv(25) @ 0: uvm_test_top.env_h [env_h] Build Phase of APB_ENV
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_agent.sv(31) @ 0: uvm_test_top.env_h.m_agent [m_agent] Build
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(37) @ 0: uvm_test_top.env_h.m_agent.drv_h [drv_h] Build Phase of APB_DRV
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(39) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:build_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(34) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:build_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(43) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:connect_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(38) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:connect_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(47) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:end of elaboration phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(42) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:end of elaboration phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(46) @ 0: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of end of elaboration phase
+# UVM_INFO ..\TEST/apb_base_test.sv(30) @ 0: uvm_test_top [uvm_test_top] END OF ELABORATION PHASE of BASE_TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               apb_base_test           -     @462 
+#   env_h                    apb_env                 -     @470 
+#     m_agent                apb_mas_agent           -     @478 
+#       drv_h                apb_mas_drv             -     @503 
+#         rsp_port           uvm_analysis_port       -     @520 
+#         seq_item_port      uvm_seq_item_pull_port  -     @511 
+#         psel               integral                1     'h0  
+#         penable            integral                1     'h0  
+#         pwrite             integral                1     'h0  
+#         paddr              integral                32    'h0  
+#         pwdata             integral                32    'h0  
+#       mon_h                apb_mas_mon             -     @495 
+#       seqr_h               apb_mas_seqr            -     @529 
+#         rsp_export         uvm_analysis_export     -     @537 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @643 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     s_agent                apb_slave_agent         -     @486 
+#       drv_h                apb_slave_drv           -     @662 
+#         rsp_port           uvm_analysis_port       -     @679 
+#         seq_item_port      uvm_seq_item_pull_port  -     @670 
+#       mon_h                apb_slave_monitor       -     @688 
+#         slv_mon_ap         uvm_analysis_port       -     @696 
+#       seqr_h               apb_slave_seqr          -     @705 
+#         rsp_export         uvm_analysis_export     -     @713 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @819 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(51) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV::start of simulation phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(46) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:start of simulation phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(50) @ 0: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of simulation phase
+# UVM_INFO ..\TEST/apb_base_test.sv(35) @ 0: uvm_test_top [uvm_test_top] RUN PHASE of BASE_TEST
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(58) @ 0: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE waiting for reset assert
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(61) @ 0: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE after initialize
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_mon.sv(30) @ 0: uvm_test_top.env_h.m_agent.mon_h [mon_h] Run Phase of APB_MAS_MON
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(46) @ 0: uvm_test_top.env_h.m_agent.drv_h [drv_h] Run Phase of APB_DRV
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(58) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE waiting for reset assert
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(66) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Inside forever 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(68) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before get next item 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(70) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE After get next item  
+# -----------------------------------------------------------------------------------------------
+# Name                           Type             Size  Value                                    
+# -----------------------------------------------------------------------------------------------
+# trans_h                        apb_slave_trans  -     @856                                     
+#   pwdata                       integral         32    'h0xxxxxxxx                              
+#   prdata                       integral         32    'hfebd1d4d                               
+#   paddr                        integral         32    'h0xxxxxxxx                              
+#   pwrite                       integral         1     'h0                                      
+#   begin_time                   time             64    30                                       
+#   depth                        int              32    'd2                                      
+#   parent sequence (name)       string           7     sseqs_h                                  
+#   parent sequence (full name)  string           41    uvm_test_top.env_h.s_agent.seqr_h.sseqs_h
+#   sequencer                    string           33    uvm_test_top.env_h.s_agent.seqr_h        
+# -----------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(72) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before drive  apb data  
+# --------------------------------------------------------------------------------------------
+# Name                           Type           Size  Value                                   
+# --------------------------------------------------------------------------------------------
+# trans_h                        apb_mas_trans  -     @852                                    
+#   paddr                        integral       32    'h99e51453                              
+#   psel                         integral       1     'h0                                     
+#   penable                      integral       1     'h1                                     
+#   pwrite                       integral       1     'h1                                     
+#   pwdata                       integral       32    'h5dd09433                              
+#   begin_time                   time           64    35                                      
+#   depth                        int            32    'd2                                     
+#   parent sequence (name)       string         6     seqs_h                                  
+#   parent sequence (full name)  string         40    uvm_test_top.env_h.m_agent.seqr_h.seqs_h
+#   sequencer                    string         33    uvm_test_top.env_h.m_agent.seqr_h       
+# --------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(94) @ 45: uvm_test_top.env_h.m_agent.drv_h [drv_h] assert of APB_DRV
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(101) @ 45: uvm_test_top.env_h.m_agent.drv_h [drv_h] Deassert of APB_DRV
+# --------------------------------------------------------------------------------------------
+# Name                           Type           Size  Value                                   
+# --------------------------------------------------------------------------------------------
+# trans_h                        apb_mas_trans  -     @852                                    
+#   paddr                        integral       32    'h99e51453                              
+#   psel                         integral       1     'h0                                     
+#   penable                      integral       1     'h1                                     
+#   pwrite                       integral       1     'h1                                     
+#   pwdata                       integral       32    'h5dd09433                              
+#   begin_time                   time           64    35                                      
+#   depth                        int            32    'd2                                     
+#   parent sequence (name)       string         6     seqs_h                                  
+#   parent sequence (full name)  string         40    uvm_test_top.env_h.m_agent.seqr_h.seqs_h
+#   sequencer                    string         33    uvm_test_top.env_h.m_agent.seqr_h       
+# --------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(74) @ 65: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before item done
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(58) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE waiting for reset assert
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(66) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Inside forever 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(68) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before get next item 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(70) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE After get next item  
+# -----------------------------------------------------------------------------------------------
+# Name                           Type             Size  Value                                    
+# -----------------------------------------------------------------------------------------------
+# trans_h                        apb_slave_trans  -     @910                                     
+#   pwdata                       integral         32    'h0xxxxxxxx                              
+#   prdata                       integral         32    'h56594500                               
+#   paddr                        integral         32    'h0xxxxxxxx                              
+#   pwrite                       integral         1     'h0                                      
+#   begin_time                   time             64    75                                       
+#   depth                        int              32    'd2                                      
+#   parent sequence (name)       string           7     sseqs_h                                  
+#   parent sequence (full name)  string           41    uvm_test_top.env_h.s_agent.seqr_h.sseqs_h
+#   sequencer                    string           33    uvm_test_top.env_h.s_agent.seqr_h        
+# -----------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(72) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before drive  apb data  
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(74) @ 85: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before item done
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 95: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(85) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:extract phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(72) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:extract phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(58) @ 95: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of extract phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(89) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:check_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(76) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:check phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(62) @ 95: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of check phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(93) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:check_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(80) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:report phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(66) @ 95: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of final phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(97) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:check_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(84) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:final phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   49
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [drv_h]    18
+# [env_h]     1
+# [m_agent]     1
+# [mon_h]     1
+# [uvm_test_top]     2
+# [uvm_test_top.env_h.s_agent]     5
+# [uvm_test_top.env_h.s_agent.drv_h]     8
+# [uvm_test_top.env_h.s_agent.mon_h]     8
+# ** Note: $finish    : C:/questasim64_10.4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 95 ns  Iteration: 53  Instance: /apb_tb_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+#  exit
+add wave -position insertpoint sim:/apb_tb_top/apb_if/*
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# ** Warning: (vsim-8441) ../ENV/SLAVE_ENV/apb_slave_monitor.sv(61): Clocking block output vif.slv_mon_cb.pready is not legal in this
+# 
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /apb_test_pkg File: ../TEST/apb_test_pkg.sv
+# Loading C:/questasim64_10.4e/uvm-1.1d\win64\uvm_dpi.dll
+run
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_base_test...
+# UVM_INFO ..\ENV\MASTER_ENV/apb_env.sv(25) @ 0: uvm_test_top.env_h [env_h] Build Phase of APB_ENV
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_agent.sv(31) @ 0: uvm_test_top.env_h.m_agent [m_agent] Build
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(37) @ 0: uvm_test_top.env_h.m_agent.drv_h [drv_h] Build Phase of APB_DRV
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(39) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:build_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(34) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:build_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(43) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:connect_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(38) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:connect_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(47) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:end of elaboration phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(42) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:end of elaboration phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(46) @ 0: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of end of elaboration phase
+# UVM_INFO ..\TEST/apb_base_test.sv(30) @ 0: uvm_test_top [uvm_test_top] END OF ELABORATION PHASE of BASE_TEST
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               apb_base_test           -     @462 
+#   env_h                    apb_env                 -     @470 
+#     m_agent                apb_mas_agent           -     @478 
+#       drv_h                apb_mas_drv             -     @503 
+#         rsp_port           uvm_analysis_port       -     @520 
+#         seq_item_port      uvm_seq_item_pull_port  -     @511 
+#         psel               integral                1     'h0  
+#         penable            integral                1     'h0  
+#         pwrite             integral                1     'h0  
+#         paddr              integral                32    'h0  
+#         pwdata             integral                32    'h0  
+#       mon_h                apb_mas_mon             -     @495 
+#       seqr_h               apb_mas_seqr            -     @529 
+#         rsp_export         uvm_analysis_export     -     @537 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @643 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     s_agent                apb_slave_agent         -     @486 
+#       drv_h                apb_slave_drv           -     @662 
+#         rsp_port           uvm_analysis_port       -     @679 
+#         seq_item_port      uvm_seq_item_pull_port  -     @670 
+#       mon_h                apb_slave_monitor       -     @688 
+#         slv_mon_ap         uvm_analysis_port       -     @696 
+#       seqr_h               apb_slave_seqr          -     @705 
+#         rsp_export         uvm_analysis_export     -     @713 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @819 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(51) @ 0: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV::start of simulation phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(46) @ 0: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:start of simulation phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(50) @ 0: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of simulation phase
+# UVM_INFO ..\TEST/apb_base_test.sv(35) @ 0: uvm_test_top [uvm_test_top] RUN PHASE of BASE_TEST
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(58) @ 0: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE waiting for reset assert
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(61) @ 0: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE after initialize
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_mon.sv(30) @ 0: uvm_test_top.env_h.m_agent.mon_h [mon_h] Run Phase of APB_MAS_MON
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(46) @ 0: uvm_test_top.env_h.m_agent.drv_h [drv_h] Run Phase of APB_DRV
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(58) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE waiting for reset assert
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(66) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Inside forever 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(68) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before get next item 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(70) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE After get next item  
+# -----------------------------------------------------------------------------------------------
+# Name                           Type             Size  Value                                    
+# -----------------------------------------------------------------------------------------------
+# trans_h                        apb_slave_trans  -     @856                                     
+#   pwdata                       integral         32    'h0xxxxxxxx                              
+#   prdata                       integral         32    'hfebd1d4d                               
+#   paddr                        integral         32    'h0xxxxxxxx                              
+#   pwrite                       integral         1     'h0                                      
+#   begin_time                   time             64    30                                       
+#   depth                        int              32    'd2                                      
+#   parent sequence (name)       string           7     sseqs_h                                  
+#   parent sequence (full name)  string           41    uvm_test_top.env_h.s_agent.seqr_h.sseqs_h
+#   sequencer                    string           33    uvm_test_top.env_h.s_agent.seqr_h        
+# -----------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(72) @ 30: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before drive  apb data  
+# --------------------------------------------------------------------------------------------
+# Name                           Type           Size  Value                                   
+# --------------------------------------------------------------------------------------------
+# trans_h                        apb_mas_trans  -     @852                                    
+#   paddr                        integral       32    'h99e51453                              
+#   psel                         integral       1     'h0                                     
+#   penable                      integral       1     'h1                                     
+#   pwrite                       integral       1     'h1                                     
+#   pwdata                       integral       32    'h5dd09433                              
+#   begin_time                   time           64    35                                      
+#   depth                        int            32    'd2                                     
+#   parent sequence (name)       string         6     seqs_h                                  
+#   parent sequence (full name)  string         40    uvm_test_top.env_h.m_agent.seqr_h.seqs_h
+#   sequencer                    string         33    uvm_test_top.env_h.m_agent.seqr_h       
+# --------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(94) @ 45: uvm_test_top.env_h.m_agent.drv_h [drv_h] assert of APB_DRV
+# UVM_INFO ..\ENV\MASTER_ENV/apb_mas_drv.sv(101) @ 45: uvm_test_top.env_h.m_agent.drv_h [drv_h] Deassert of APB_DRV
+# --------------------------------------------------------------------------------------------
+# Name                           Type           Size  Value                                   
+# --------------------------------------------------------------------------------------------
+# trans_h                        apb_mas_trans  -     @852                                    
+#   paddr                        integral       32    'h99e51453                              
+#   psel                         integral       1     'h0                                     
+#   penable                      integral       1     'h1                                     
+#   pwrite                       integral       1     'h1                                     
+#   pwdata                       integral       32    'h5dd09433                              
+#   begin_time                   time           64    35                                      
+#   depth                        int            32    'd2                                     
+#   parent sequence (name)       string         6     seqs_h                                  
+#   parent sequence (full name)  string         40    uvm_test_top.env_h.m_agent.seqr_h.seqs_h
+#   sequencer                    string         33    uvm_test_top.env_h.m_agent.seqr_h       
+# --------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(74) @ 65: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before item done
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(58) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE waiting for reset assert
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(66) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Inside forever 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(68) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before get next item 
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(70) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE After get next item  
+# -----------------------------------------------------------------------------------------------
+# Name                           Type             Size  Value                                    
+# -----------------------------------------------------------------------------------------------
+# trans_h                        apb_slave_trans  -     @910                                     
+#   pwdata                       integral         32    'h0xxxxxxxx                              
+#   prdata                       integral         32    'h56594500                               
+#   paddr                        integral         32    'h0xxxxxxxx                              
+#   pwrite                       integral         1     'h0                                      
+#   begin_time                   time             64    75                                       
+#   depth                        int              32    'd2                                      
+#   parent sequence (name)       string           7     sseqs_h                                  
+#   parent sequence (full name)  string           41    uvm_test_top.env_h.s_agent.seqr_h.sseqs_h
+#   sequencer                    string           33    uvm_test_top.env_h.s_agent.seqr_h        
+# -----------------------------------------------------------------------------------------------
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(72) @ 75: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before drive  apb data  
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(74) @ 85: uvm_test_top.env_h.s_agent.drv_h [drv_h] SLV_DRV:RUN PHASE Before item done
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 95: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(85) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:extract phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(72) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:extract phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(58) @ 95: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of extract phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(89) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:check_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(76) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:check phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(62) @ 95: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of check phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(93) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:check_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(80) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:report phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_agent.sv(66) @ 95: uvm_test_top.env_h.s_agent [uvm_test_top.env_h.s_agent] APB_SLV_AGNT:start of final phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_drv.sv(97) @ 95: uvm_test_top.env_h.s_agent.drv_h [uvm_test_top.env_h.s_agent.drv_h] APB_DRV:check_phase
+# UVM_INFO ..\ENV\SLAVE_ENV/apb_slave_monitor.sv(84) @ 95: uvm_test_top.env_h.s_agent.mon_h [uvm_test_top.env_h.s_agent.mon_h] APB_SLV_MON:final phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   49
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [drv_h]    18
+# [env_h]     1
+# [m_agent]     1
+# [mon_h]     1
+# [uvm_test_top]     2
+# [uvm_test_top.env_h.s_agent]     5
+# [uvm_test_top.env_h.s_agent.drv_h]     8
+# [uvm_test_top.env_h.s_agent.mon_h]     8
+# ** Note: $finish    : C:/questasim64_10.4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 95 ns  Iteration: 53  Instance: /apb_tb_top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim64_10.4e/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430

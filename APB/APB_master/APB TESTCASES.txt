@@ -1,0 +1,19 @@
+APB TESTCASES
+
+1. WRITE Operation with wait
+2. WRITE Operation with no wait
+3. Normal write read operation with wait state
+4. Normal write read operation with wait No state
+5. Back to back write read operation with wait state
+6. Back to back write read operation with No wait state
+7. In between reset
+8. PENB high and PSEL low
+9. PSLVERR came and PREADY low.
+
+vlog ..\TEST\apb_test_pkg.sv ..\TOP\apb_tb_top.sv +incdir+..\ENV +incdir+..\TEST
+ vsim -novopt apb_tb_top -c -do "run -all; exit"
+
+
+
+
+
